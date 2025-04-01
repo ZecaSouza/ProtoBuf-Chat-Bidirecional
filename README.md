@@ -58,6 +58,7 @@ go run server.go
 go run client.go
 ```
 
+
 📌 Melhorias futuras
 ✅ Suporte a TLS (criptografia)
 

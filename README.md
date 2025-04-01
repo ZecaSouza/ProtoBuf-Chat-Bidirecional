@@ -2,7 +2,20 @@
 
 Este é um projeto de chat em tempo real com **gRPC** usando **stream bidirecional**, desenvolvido em Go.
 
-## 📦 Estrutura do Projeto
+Ele utiliza o **Protocol Buffers (Protobuf)**, um formato de serialização de dados leve e eficiente criado pelo Google. O Protobuf permite definir a estrutura das mensagens e dos serviços em um arquivo `.proto`, gerando automaticamente o código necessário para comunicação entre cliente e servidor de forma rápida (em média até 5x mais veloz que JSON), compacta e multiplataforma.
+
+As mensagens são convertidas para **formato binário**, o que reduz o tamanho dos dados transmitidos e acelera a comunicação. Diferente de formatos como JSON ou XML, que são baseados em texto e mais verbosos, o Protobuf gera arquivos menores e mais rápidos de serializar e desserializar.
+
+Além disso, o **gRPC** utiliza o **HTTP/2** como protocolo de transporte, o que traz várias vantagens em relação ao HTTP/1.1, como:
+
+- Multiplexação de streams (várias mensagens em uma mesma conexão)
+- Redução de latência
+- Cabeçalhos comprimidos
+- Conexões persistentes mais eficientes
+
+Com isso, o projeto consegue estabelecer uma comunicação contínua e bidirecional entre clientes e servidor de forma moderna, eficiente e escalável.
+
+
 
 ## 1. Clonar o repositório
 

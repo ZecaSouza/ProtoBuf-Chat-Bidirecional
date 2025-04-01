@@ -57,3 +57,14 @@ go run server.go
 ```bash
 go run client.go
 ```
+
+📌 Melhorias futuras
+✅ Suporte a TLS (criptografia)
+
+✅ Armazenamento de histórico (arquivo ou banco de dados)
+
+✅ Interface gráfica com BubbleTea ou WebSocket
+
+✅ Autenticação de usuários
+
+✅ Argumentos CLI para configuração

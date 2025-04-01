@@ -31,9 +31,10 @@ Go (versão recomendada: 1.18+)
 go mod tidy
 ```
 ## 3. Compilar o .proto
+instalar protobuf
 ```bash
 # Instalar o compilador Protocol Buffers
-brew install protobuf
+https://github.com/protocolbuffers/protobuf
 
 # Plugin do Go
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
@@ -58,8 +59,14 @@ go run server.go
 go run client.go
 ```
 
+# 🛠 Tecnologias
+Go
 
-📌 Melhorias futuras
+gRPC
+
+Protocol Buffers
+
+# 📌 Melhorias futuras
 ✅ Suporte a TLS (criptografia)
 
 ✅ Armazenamento de histórico (arquivo ou banco de dados)
